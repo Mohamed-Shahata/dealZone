@@ -10,11 +10,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Path to the APK file
-const apkFilePath = path.join(__dirname, "5.jpg");
+const apkFilePath = path.join(__dirname, "imagess.jpg");
 
 // Route to download the APK file
 app.get("/", (req, res) => {
-  res.download(apkFilePath, "app-release.apk", (err) => {
+  res.download(apkFilePath, "image.jpg", (err) => {
     if (err) {
       console.error("Error occurred while downloading the file:", err);
       res.status(500).send("An error occurred while downloading the file.");
