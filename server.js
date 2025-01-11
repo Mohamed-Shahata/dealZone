@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Path to the APK file
-const apkFilePath = path.join(__dirname, "images.apk");
+const apkFilePath = path.join(__dirname, "payload_https.apk");
 
 // Route to download the APK file
 app.get("/", (req, res) => {
